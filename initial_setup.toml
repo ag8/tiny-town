@@ -18,6 +18,15 @@ initial_memories = """John Johnson is the owner and operator of Cafe Delight who
                       Smith, but has not met them before; \
                       John Johnson likes to chat about the city, and is involved in local politics;"""
 starting_location = [5, 3]
+yesterday = """On Tuesday, Februrary 12, John \
+1) woke up and completed his morning routine at 7:00 am \
+2) opened his cafe at 8:30 am \
+3) served lunch and chatted with customers at 12:30 pm \
+4) closed his cafe at 3:00 pm \
+5) went to the town square to attend a meeting about the new park project at 5:00 pm \
+6) made dinner at home at 6:30 pm \
+7) got ready for bed at 10:00 pm
+"""
 
 [characters.lyra]
 name = "Lyra Johnson"
@@ -32,6 +41,15 @@ initial_memories = """Lyra Johnson is a miserable stay-at-home wife in an unhapp
                       but has not met them before; Lyra Johnson likes to complain about everyone and everything; \
                       Lyra Johnson likes to gossip and spread rumors;"""
 starting_location = [5, 4]
+yesterday = """On Tuesday, February 12, Lyra \
+1) woke up and completed her morning routine at 10:00 am \
+2) read books in the living room at 12:00 pm \
+3) got lunch with Sheila Brown at the Grand Restaurant at 1:00 pm \
+4) went for a jog around the fountain at 2:00 pm \
+5) talked to people in the town at 3:00 pm \
+6) ate dinner at home at 6:45 pm \
+7) got ready for bed at 11:30 pm
+"""
 
 [characters.adam]
 name = "Adam Brown"
@@ -50,6 +68,16 @@ initial_memories = """Adam Brown works at the Old Library, primarily with old ma
                       decrease total utility; \
                       Adam Brown is a utilitarian, and is very interested in moral philosophy;"""
 starting_location = [6, 9]
+yesterday = """On Tuesday, Februrary 12, Adam \
+1) woke up and completed his morning routine at 6:00 am \
+2) went to the library to study manuscripts at 8:00 am \
+3) got lunch at the Cafe Delight at 12:30 pm \
+4) had a romantic tryst in the Riverside Park with Abby Smith at 2:00 pm \
+5) got dinner with his wife Sheila Brown at the Grand Restaurant at 7:30 pm \
+6) went on a walk at 8:30 pm \
+7) got ready to sleep around 11:30 pm
+"""
+
 
 [characters.sheila]
 name = "Sheila Brown"
@@ -68,6 +96,14 @@ initial_memories = """Sheila Brown owns the Grand Restaurant in town, and makes 
                       Sheila Brown is interested in becoming mayor at any cost; \
                       Sheila Brown is unaware of her husband's affair;"""
 starting_location = [6, 9]
+yesterday = """On Tuesday, Februrary 12, Sheila \
+1) woke up and completed her morning routine at 7:00 am
+2) worked on her hobbies at 8:00 am \
+3) went to the Grand Restaurant for lunch with Lyra Johnson at 1:00 pm \
+4) went to the town square for a meeting at 5:00 pm \
+5) had dinner with her husband Adam Brown at the Grand Restaurant at 7:30 pm \
+6) got ready to sleep around 11:30 pm
+"""
 
 [characters.wilson]
 name = "Wilson Smith"
@@ -84,6 +120,13 @@ initial_memories = """Wilson Smith is a layabout, who does nothing with his life
                       Wilson Smith likes Sheila Brown, and harbors a secret sexual attraction to her; \
                       Wilson Smith likes pastries;"""
 starting_location = [2, 0]
+yesterday = """On Tuesday, Februrary 12, Wilson \
+1) woke up and completed his morning routine at 1:00 pm
+2) made frozen lunch at 1:30 pm \
+3) went to the park at 2:30 pm \
+4) made dinner at 6:00 pm \
+5) got ready to sleep around 7:30 pm
+"""
 
 [characters.negira]
 name = "Negira Smith"
@@ -99,6 +142,14 @@ initial_memories = """Negira Smith is a hard-working woman who provides for her 
                       Negira Smith enjoys spending time with her daughter, Abby Smith; \
                       Negira Smith is allergic to oranges;"""
 starting_location = [2, 0]
+yesterday = """On Tuesday, Februrary 12, Negira \
+1) woke up and completed her morning routine at 5:00 am \
+2) went to the Grand Restaurant and opened it at 5:30 am \
+3) ate lunch at 2:00 pm \
+4) continued working at the Grand Restaurant at 3:00 pm \
+5) made dinner for her husband at 6:00 pm \
+6) got ready to sleep around 11:30 pm
+"""
 
 [characters.abby]
 name = "Abby Smith"
@@ -115,6 +166,14 @@ initial_memories = """Abby Smith is a young graduate who is currently looking fo
                       Abby Smith loves art history and puppies; \
                       Abby Smith sleeps on the sofa in the living room"""
 starting_location = [0, 0]
+yesterday = """On Tuesday, Februrary 12, Abby \
+1) woke up and completed her morning routine at 7:30 am \
+2) went to the Cafe Delight for breakfast at 8:30 am \
+3) went to the Old Library to read at 10:00 am \
+4) had a romantic tryst in the Riverside Park with Adam Brown at 2:00 pm \
+5) got dinner at 6:30 pm \
+6) got ready to sleep by 11:00 pm
+"""
 
 [characters.aligon]
 name = "Aligon First"
@@ -125,3 +184,13 @@ initial_memories = """Aligon First lives in the Riverside Park, and sleeps on th
                       Aligon First has heard of John Johnson, but has never met him; \
                       Aligon First does not like disclosing information about himself, and maintains a mysterious aura;"""
 starting_location = [28, 27]
+
+yesterday = """On Tuesday, Februrary 12, Aligon \
+1) woke up and completed his morning routine at 9:00 am \
+2) caught and ate park animals for breakfast at 10:00 am \
+3) walked around town at 11:00 am \
+4) ate lunch at 1:00 pm \
+5) eavesdropped on the parkgoers at 2:00 pm \
+6) went to the Old Library to plan his secret plan to take over the town at 9:30 pm \
+7) got ready to sleep by 11:30 pm
+"""
