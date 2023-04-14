@@ -1,0 +1,68 @@
+import re
+
+import openai as openai
+
+import secret_stuff
+
+openai.api_key = secret_stuff.API_KEY
+
+def get_embedding(text):
+    response = openai.Embedding.create(
+        input="Your text string goes here",
+        model="text-embedding-ada-002"
+    )
+    embeddings = response['data'][0]['embedding']
+    return embeddings
+
+def get_importance(memory):
+    completion = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        max_tokens=2,
+        temperature=0.7,
+        messages=[
+            {"role": "user", "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., brushing teeth, making bed) and 10 is extremely poignant (e.g., a break up, college acceptance), rate the likely poignancy of the following piece of memory.\nMemory: " + memory + "\nRating:"}
+        ]
+    )
+    try:
+        return int(completion["choices"][0]["message"]["content"])
+    except:
+        try:
+            return int(completion["choices"][0]["message"]["content"])[0]
+        except:
+            print("Oh no, can't evaluate importance well for memory " + memory)
+            print("instead saying " + completion["choices"][0]["message"]["content"])
+            return 5
+
+def reflect_on_memories(name, memories, t):
+    prompt = "Statements about " + str(name) + "\n"
+
+    for idx, memory in enumerate(memories):
+        prompt += str(idx) + ". " + memory.description + "\n"
+
+    prompt += "What 5 high-level insights can you infer from the above statements? (example format: insight (because of {1, 6, 2, 3}))\n\n1."
+
+    completion = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        max_tokens=800,
+        temperature=0.7,
+        messages=[
+            {"role": "user", "content": prompt}
+        ]
+    )
+
+    compl = completion["choices"][0]["message"]["content"]
+    reflections = compl.split("\n")
+
+    reflected = []
+
+    for idx, reflection in enumerate(reflections):
+        if idx == 0:
+            actual_text = reflection
+        else:
+            actual_text = ". ".join(reflection.split(". ")[1:])
+        print(actual_text)
+        evidentiary = actual_text.split("(")[1].split(")")[0]
+        evidence = tuple(int(x) for x in re.findall(r'\d+', evidentiary))
+        reflected.append([actual_text.split("(")[0], evidence])
+
+    return reflected

@@ -1,0 +1,326 @@
+{
+  "name": "Small Town",
+  "description": "A charming, peaceful town surrounded by lush greenery and a sparkling river.",
+  "children": [
+    {
+      "name": "Town Square",
+      "description": "A bustling central gathering place for the townspeople, featuring a beautiful fountain and benches.",
+      "children": [
+        {
+          "name": "Fountain",
+          "description": "An intricately designed marble fountain with water gracefully flowing from the top."
+        },
+        {
+          "name": "Benches",
+          "description": "A set of wooden benches, perfect for relaxing and people watching."
+        }
+      ]
+    },
+    {
+      "name": "Cafe Delight",
+      "description": "A cozy, popular cafe known for its delicious pastries and aromatic coffee.",
+      "children": [
+        {
+          "name": "Counter",
+          "description": "A long wooden counter displaying an array of cakes, pastries, and sandwiches.",
+          "children": [
+            {
+              "name": "Cappuccino",
+              "description": "A hot, frothy cappuccino with a delicate heart-shaped design."
+            },
+            {
+              "name": "Croissant",
+              "description": "A golden, flaky croissant filled with rich almond paste."
+            }
+          ]
+        },
+        {
+          "name": "Tables",
+          "description": "A set of round tables with comfortable cushioned chairs.",
+          "children": [
+            {
+              "name": "Menu",
+              "description": "A printed menu featuring the cafe's selection of food and beverages."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Riverside Park",
+      "description": "A picturesque park along the river, complete with walking paths, playground, and picnic areas.",
+      "children": [
+        {
+          "name": "Playground",
+          "description": "A fun playground with swings, slides, and climbing structures for children to enjoy.",
+          "children": [
+            {
+              "name": "Swings",
+              "description": "A set of swings with sturdy metal chains and comfortable rubber seats."
+            },
+            {
+              "name": "Slide",
+              "description": "A tall, smooth slide with a gentle slope for a safe and enjoyable ride."
+            }
+          ]
+        },
+        {
+          "name": "Picnic Area",
+          "description": "A lovely picnic area with tables and barbecue grills overlooking the river.",
+          "children": [
+            {
+              "name": "Picnic Table",
+              "description": "A sturdy wooden picnic table with attached benches on both sides."
+            },
+            {
+              "name": "Barbecue Grill",
+              "description": "A large, clean charcoal grill available for public use."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Grand Restaurant",
+      "description": "An elegant, fine dining restaurant serving exquisite dishes in a luxurious setting.",
+      "children": [
+        {
+          "name": "Reception",
+          "description": "A grand reception area with a polished marble floor and a crystal chandelier.",
+          "children": [
+            {
+              "name": "Reservation Book",
+              "description": "A large, leather-bound book containing the restaurant's reservations."
+            }
+          ]
+        },
+        {
+          "name": "Dining Room",
+          "description": "A lavish dining room with candlelit tables, velvet upholstered chairs, and ornate decorations.",
+          "children": [
+            {
+              "name": "Table",
+              "description": "An elegantly set table with fine china, silverware, and crystal glassware."
+            },
+            {
+              "name": "Wine List",
+              "description": "An extensive wine list featuring a selection of the finest wines from around the world."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Old Library",
+      "description": "A historic library housing a vast collection of books, manuscripts, and artifacts.",
+      "children": [
+        {
+          "name": "Main Hall",
+          "description": "A grand hall with towering bookshelves, long wooden tables, and cozy reading nooks.",
+          "children": [
+            {
+              "name": "Bookshelf",
+              "description": "An impressive bookshelf filled with volumes of literature, history, and science."
+            },
+            {
+              "name": "Globe",
+              "description": "An antique wooden globe showcasing a detailed map of the world."
+            }
+          ]
+        },
+        {
+          "name": "Rare Books Room",
+          "description": "A temperature and humidity-controlled room containing rare, valuable books and manuscripts.",
+          "children": [
+            {
+              "name": "Ancient Manuscript",
+              "description": "A fragile, hand-written manuscript dating back several centuries."
+            },
+            {
+              "name": "First Edition Novel",
+              "description": "A valuable first edition of a classic novel in pristine condition."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Houses",
+      "description": "A row of quaint houses with well-kept gardens and picket fences.",
+      "children": [
+        {
+          "name": "Smith House",
+          "description": "A cozy, cottage-style house with a front porch and a white picket fence.",
+          "children": [
+            {
+              "name": "Living Room",
+              "description": "A comfortable living room with a plush sofa, armchairs, and a fireplace.",
+              "children": [
+                {
+                  "name": "Sofa",
+                  "description": "A soft, cushioned sofa perfect for lounging or reading."
+                },
+                {
+                  "name": "Armchair",
+                  "description": "A cozy, upholstered armchair with a matching ottoman."
+                },
+                {
+                  "name": "Fireplace",
+                  "description": "A classic brick fireplace with a mantel and a roaring fire."
+                }
+              ]
+            },
+            {
+              "name": "Kitchen",
+              "description": "A bright, airy kitchen with modern appliances and a breakfast nook.",
+              "children": [
+                {
+                  "name": "Stove",
+                  "description": "A sleek, stainless steel stove with multiple burners and an oven."
+                },
+                {
+                  "name": "Refrigerator",
+                  "description": "A spacious, energy-efficient refrigerator with a freezer compartment."
+                },
+                {
+                  "name": "Dining Table",
+                  "description": "A wooden dining table with matching chairs and a vase of fresh flowers."
+                }
+              ]
+            },
+            {
+              "name": "Bedroom",
+              "description": "A cozy bedroom with a comfortable queen-size bed and a large window.",
+              "children": [
+                {
+                  "name": "Bed",
+                  "description": "A soft, plush queen-size bed with fluffy pillows and a warm comforter."
+                },
+                {
+                  "name": "Dresser",
+                  "description": "A tall wooden dresser with several drawers for storing clothes."
+                },
+                {
+                  "name": "Window",
+                  "description": "A large window with a view of the garden and the street."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Johnson House",
+          "description": "A charming, two-story house with a wrap-around porch and a spacious backyard.",
+          "children": [
+            {
+              "name": "Living Room",
+              "description": "A spacious living room with a large sofa, armchairs, and a piano.",
+              "children": [
+                {
+                  "name": "Sofa",
+                  "description": "A comfortable, sectional sofa with plenty of room for lounging."
+                },
+                {
+                  "name": "Armchair",
+                  "description": "A stylish, vintage armchair with a matching ottoman."
+                },
+                {
+                  "name": "Piano",
+                  "description": "A beautiful, black grand piano with a polished finish."
+                }
+              ]
+            },
+            {
+              "name": "Dining Room",
+              "description": "A formal dining room with a large table, chairs, and a chandelier.",
+              "children": [
+                {
+                  "name": "Table",
+                  "description": "A long, elegant dining table with upholstered chairs and a floral centerpiece."
+                },
+                {
+                  "name": "Chandelier",
+                  "description": "A sparkling, crystal chandelier hanging from the ceiling."
+                }
+              ]
+            },
+            {
+              "name": "Bedroom",
+              "description": "A cozy bedroom with a queen-size bed and a walk-in closet.",
+              "children": [
+                {
+                  "name": "Bed",
+                  "description": "A comfortable queen-size bed with fluffy pillows and a warm comforter."
+                },
+                {
+                  "name": "Closet",
+                  "description": "A spacious walk-in closet with shelves, racks, and hangers."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Brown House",
+          "description": "A large, stately house with a manicured lawn and a circular driveway.",
+          "children": [
+            {
+              "name": "Living Room",
+              "description": "A grand living room with high ceilings, antique furniture, and a fireplace.",
+              "children": [
+                {
+                  "name": "Sofa",
+                  "description": "A luxurious, tufted sofa with silk pillows and a matching armchair."
+                },
+                {
+                  "name": "Armchair",
+                  "description": "A stylish, upholstered armchair with a matching footstool."
+                },
+                {
+                  "name": "Fireplace",
+                  "description": "A grand, marble fireplace with a mantel and a roaring fire."
+                }
+              ]
+            },
+            {
+              "name": "Library",
+              "description": "A stately library with floor-to-ceiling bookshelves, leather armchairs, and a desk.",
+              "children": [
+                {
+                  "name": "Bookshelf",
+                  "description": "A massive bookshelf filled with rare, valuable books and manuscripts."
+                },
+                {
+                  "name": "Armchair",
+                  "description": "A comfortable, leather armchair perfect for reading or relaxing."
+                },
+                {
+                  "name": "Desk",
+                  "description": "A large, ornate wooden desk with a lamp and writing supplies."
+                }
+              ]
+            },
+            {
+              "name": "Bedroom",
+              "description": "A luxurious bedroom with a king-size bed, a balcony, and a marble bathroom.",
+              "children": [
+                {
+                  "name": "Bed",
+                  "description": "A plush, king-size bed with silk sheets and a down comforter."
+                },
+                {
+                  "name": "Balcony",
+                  "description": "A spacious balcony with a view of the garden and the street."
+                },
+                {
+                  "name": "Bathroom",
+                  "description": "A marble bathroom with a large tub, a walk-in shower, and plush towels."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

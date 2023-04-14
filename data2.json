@@ -1,0 +1,1074 @@
+{
+  "name": "Small Town",
+  "description": "A charming, peaceful town surrounded by lush greenery and a sparkling river.",
+  "location": {
+    "top_left": [
+      0,
+      0
+    ],
+    "bottom_right": [
+      29,
+      29
+    ]
+  },
+  "color": "green",
+  "children": [
+    {
+      "name": "Town Square",
+      "description": "A bustling central gathering place for the townspeople, featuring a beautiful fountain and benches.",
+      "location": {
+        "top_left": [
+          10,
+          10
+        ],
+        "bottom_right": [
+          19,
+          19
+        ]
+      },
+      "color": "gray",
+      "children": [
+        {
+          "name": "Fountain",
+          "description": "An intricately designed marble fountain with water gracefully flowing from the top.",
+          "location": {
+            "top_left": [
+              14,
+              14
+            ],
+            "bottom_right": [
+              15,
+              15
+            ]
+          },
+          "color": "blue"
+        },
+        {
+          "name": "Benches",
+          "description": "A set of wooden benches, perfect for relaxing and people watching.",
+          "location": {
+            "top_left": [
+              12,
+              12
+            ],
+            "bottom_right": [
+              17,
+              13
+            ]
+          },
+          "color": "brown"
+        }
+      ]
+    },
+    {
+      "name": "Cafe Delight",
+      "description": "A cozy, popular cafe known for its delicious pastries and aromatic coffee.",
+      "location": {
+        "top_left": [
+          5,
+          5
+        ],
+        "bottom_right": [
+          9,
+          9
+        ]
+      },
+      "color": "pink",
+      "children": [
+        {
+          "name": "Counter",
+          "description": "A long wooden counter displaying an array of cakes, pastries, and sandwiches.",
+          "location": {
+            "top_left": [
+              6,
+              8
+            ],
+            "bottom_right": [
+              8,
+              8
+            ]
+          },
+          "color": "brown",
+          "children": [
+            {
+              "name": "Cappuccino",
+              "description": "A hot, frothy cappuccino with a delicate heart-shaped design.",
+              "location": {
+                "top_left": [
+                  7,
+                  8
+                ],
+                "bottom_right": [
+                  7,
+                  8
+                ]
+              },
+              "color": "white"
+            },
+            {
+              "name": "Croissant",
+              "description": "A golden, flaky croissant filled with rich almond paste.",
+              "location": {
+                "top_left": [
+                  6,
+                  8
+                ],
+                "bottom_right": [
+                  6,
+                  8
+                ]
+              },
+              "color": "yellow"
+            }
+          ]
+        },
+        {
+          "name": "Tables",
+          "description": "A set of round tables with comfortable cushioned chairs.",
+          "location": {
+            "top_left": [
+              6,
+              6
+            ],
+            "bottom_right": [
+              8,
+              7
+            ]
+          },
+          "color": "brown",
+          "children": [
+            {
+              "name": "Menu",
+              "description": "A printed menu featuring the cafe's selection of food and beverages.",
+              "location": {
+                "top_left": [
+                  7,
+                  7
+                ],
+                "bottom_right": [
+                  7,
+                  7
+                ]
+              },
+              "color": "white"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Riverside Park",
+      "description": "A picturesque park along the river, complete with walking paths, playground, and picnic areas.",
+      "location": {
+        "top_left": [
+          17,
+          20
+        ],
+        "bottom_right": [
+          29,
+          29
+        ]
+      },
+      "color": "light_green",
+      "children": [
+        {
+          "name": "Playground",
+          "description": "A fun playground with swings, slides, and climbing structures for children to enjoy.",
+          "location": {
+            "top_left": [
+              21,
+              21
+            ],
+            "bottom_right": [
+              24,
+              24
+            ]
+          },
+          "color": "red",
+          "children": [
+            {
+              "name": "Swings",
+              "description": "A set of swings with sturdy metal chains and comfortable rubber seats.",
+              "location": {
+                "top_left": [
+                  22,
+                  22
+                ],
+                "bottom_right": [
+                  22,
+                  23
+                ]
+              },
+              "color": "silver"
+            },
+            {
+              "name": "Slide",
+              "description": "A tall, smooth slide with a gentle slope for a safe and enjoyable ride.",
+              "location": {
+                "top_left": [
+                  24,
+                  22
+                ],
+                "bottom_right": [
+                  24,
+                  23
+                ]
+              },
+              "color": "blue"
+            }
+          ]
+        },
+        {
+          "name": "Picnic Area",
+          "description": "A lovely picnic area with tables and barbecue grills overlooking the river.",
+          "location": {
+            "top_left": [
+              26,
+              26
+            ],
+            "bottom_right": [
+              28,
+              28
+            ]
+          },
+          "color": "brown",
+          "children": [
+            {
+              "name": "Picnic Table",
+              "description": "A sturdy wooden picnic table with attached benches on both sides.",
+              "location": {
+                "top_left": [
+                  27,
+                  27
+                ],
+                "bottom_right": [
+                  28,
+                  27
+                ]
+              },
+              "color": "brown"
+            },
+            {
+              "name": "Barbecue Grill",
+              "description": "A large, clean charcoal grill available for public use.",
+              "location": {
+                "top_left": [
+                  26,
+                  28
+                ],
+                "bottom_right": [
+                  26,
+                  28
+                ]
+              },
+              "color": "black"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Grand Restaurant",
+      "description": "An elegant, fine dining restaurant serving exquisite dishes in a luxurious setting.",
+      "location": {
+        "top_left": [
+          20,
+          10
+        ],
+        "bottom_right": [
+          29,
+          19
+        ]
+      },
+      "color": "purple",
+      "children": [
+        {
+          "name": "Reception",
+          "description": "A grand reception area with a polished marble floor and a crystal chandelier.",
+          "location": {
+            "top_left": [
+              21,
+              11
+            ],
+            "bottom_right": [
+              23,
+              13
+            ]
+          },
+          "color": "white",
+          "children": [
+            {
+              "name": "Reservation Book",
+              "description": "A large, leather-bound book containing the restaurant's reservations.",
+              "location": {
+                "top_left": [
+                  22,
+                  12
+                ],
+                "bottom_right": [
+                  23,
+                  12
+                ]
+              },
+              "color": "black"
+            }
+          ]
+        },
+        {
+          "name": "Dining Room",
+          "description": "A lavish dining room with candlelit tables, velvet upholstered chairs, and ornate decorations.",
+          "location": {
+            "top_left": [
+              24,
+              14
+            ],
+            "bottom_right": [
+              28,
+              18
+            ]
+          },
+          "color": "red",
+          "children": [
+            {
+              "name": "Table",
+              "description": "An elegantly set table with fine china, silverware, and crystal glassware.",
+              "location": {
+                "top_left": [
+                  25,
+                  15
+                ],
+                "bottom_right": [
+                  26,
+                  16
+                ]
+              },
+              "color": "white"
+            },
+            {
+              "name": "Wine List",
+              "description": "An extensive wine list featuring a selection of the finest wines from around the world.",
+              "location": {
+                "top_left": [
+                  27,
+                  17
+                ],
+                "bottom_right": [
+                  27,
+                  17
+                ]
+              },
+              "color": "white"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Old Library",
+      "description": "A historic library housing a vast collection of books, manuscripts, and artifacts.",
+      "location": {
+        "top_left": [
+          0,
+          10
+        ],
+        "bottom_right": [
+          9,
+          19
+        ]
+      },
+      "color": "brown",
+      "children": [
+        {
+          "name": "Main Hall",
+          "description": "A grand hall with towering bookshelves, long wooden tables, and cozy reading nooks.",
+          "location": {
+            "top_left": [
+              1,
+              11
+            ],
+            "bottom_right": [
+              4,
+              18
+            ]
+          },
+          "color": "dark_brown",
+          "children": [
+            {
+              "name": "Bookshelf",
+              "description": "An impressive bookshelf filled with volumes of literature, history, and science.",
+              "location": {
+                "top_left": [
+                  1,
+                  12
+                ],
+                "bottom_right": [
+                  1,
+                  17
+                ]
+              },
+              "color": "brown"
+            },
+            {
+              "name": "Globe",
+              "description": "An antique wooden globe showcasing a detailed map of the world.",
+              "location": {
+                "top_left": [
+                  4,
+                  16
+                ],
+                "bottom_right": [
+                  4,
+                  16
+                ]
+              },
+              "color": "dark_brown"
+            }
+          ]
+        },
+        {
+          "name": "Rare Books Room",
+          "description": "A temperature and humidity-controlled room containing rare, valuable books and manuscripts.",
+          "location": {
+            "top_left": [
+              5,
+              11
+            ],
+            "bottom_right": [
+              8,
+              18
+            ]
+          },
+          "color": "light_brown",
+          "children": [
+            {
+              "name": "Ancient Manuscript",
+              "description": "A fragile, hand-written manuscript dating back several centuries.",
+              "location": {
+                "top_left": [
+                  6,
+                  12
+                ],
+                "bottom_right": [
+                  6,
+                  12
+                ]
+              },
+              "color": "beige"
+            },
+            {
+              "name": "First Edition Novel",
+              "description": "A valuable first edition of a classic novel in pristine condition.",
+              "location": {
+                "top_left": [
+                  7,
+                  17
+                ],
+                "bottom_right": [
+                  7,
+                  17
+                ]
+              },
+              "color": "blue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Houses",
+      "description": "A row of quaint houses with well-kept gardens and picket fences.",
+      "location": {
+        "top_left": [
+          0,
+          0
+        ],
+        "bottom_right": [
+          9,
+          9
+        ]
+      },
+      "color": "yellow",
+      "children": [
+        {
+          "name": "Smith House",
+          "description": "A cozy, cottage-style house with a front porch and a white picket fence.",
+          "location": {
+            "top_left": [
+              0,
+              0
+            ],
+            "bottom_right": [
+              2,
+              2
+            ]
+          },
+          "color": "white",
+          "children": [
+            {
+              "name": "Living Room",
+              "description": "A comfortable living room with a plush sofa, armchairs, and a fireplace.",
+              "location": {
+                "top_left": [
+                  0,
+                  0
+                ],
+                "bottom_right": [
+                  0,
+                  1
+                ]
+              },
+              "color": "beige",
+              "children": [
+                {
+                  "name": "Sofa",
+                  "description": "A soft, cushioned sofa perfect for lounging or reading.",
+                  "location": {
+                    "top_left": [
+                      0,
+                      0
+                    ],
+                    "bottom_right": [
+                      0,
+                      0
+                    ]
+                  },
+                  "color": "light_brown"
+                },
+                {
+                  "name": "Armchair",
+                  "description": "A cozy, upholstered armchair with a matching ottoman.",
+                  "location": {
+                    "top_left": [
+                      0,
+                      1
+                    ],
+                    "bottom_right": [
+                      0,
+                      1
+                    ]
+                  },
+                  "color": "dark_brown"
+                },
+                {
+                  "name": "Fireplace",
+                  "description": "A classic brick fireplace with a mantel and a roaring fire.",
+                  "location": {
+                    "top_left": [
+                      0,
+                      0
+                    ],
+                    "bottom_right": [
+                      0,
+                      1
+                    ]
+                  },
+                  "color": "red"
+                }
+              ]
+            },
+            {
+              "name": "Kitchen",
+              "description": "A bright, airy kitchen with modern appliances and a breakfast nook.",
+              "location": {
+                "top_left": [
+                  1,
+                  1
+                ],
+                "bottom_right": [
+                  2,
+                  2
+                ]
+              },
+              "color": "white",
+              "children": [
+                {
+                  "name": "Stove",
+                  "description": "A sleek, stainless steel stove with multiple burners and an oven.",
+                  "location": {
+                    "top_left": [
+                      1,
+                      1
+                    ],
+                    "bottom_right": [
+                      1,
+                      1
+                    ]
+                  },
+                  "color": "silver"
+                },
+                {
+                  "name": "Refrigerator",
+                  "description": "A spacious, energy-efficient refrigerator with a freezer compartment.",
+                  "location": {
+                    "top_left": [
+                      1,
+                      2
+                    ],
+                    "bottom_right": [
+                      1,
+                      2
+                    ]
+                  },
+                  "color": "silver"
+                },
+                {
+                  "name": "Dining Table",
+                  "description": "A wooden dining table with matching chairs and a vase of fresh flowers.",
+                  "location": {
+                    "top_left": [
+                      2,
+                      1
+                    ],
+                    "bottom_right": [
+                      2,
+                      2
+                    ]
+                  },
+                  "color": "brown"
+                }
+              ]
+            },
+            {
+              "name": "Bedroom",
+              "description": "A cozy bedroom with a comfortable queen-size bed and a large window.",
+              "location": {
+                "top_left": [
+                  2,
+                  0
+                ],
+                "bottom_right": [
+                  2,
+                  0
+                ]
+              },
+              "color": "beige",
+              "children": [
+                {
+                  "name": "Bed",
+                  "description": "A soft, plush queen-size bed with fluffy pillows and a warm comforter.",
+                  "location": {
+                    "top_left": [
+                      2,
+                      0
+                    ],
+                    "bottom_right": [
+                      2,
+                      0
+                    ]
+                  },
+                  "color": "white"
+                },
+                {
+                  "name": "Dresser",
+                  "description": "A tall wooden dresser with several drawers for storing clothes.",
+                  "location": {
+                    "top_left": [
+                      2,
+                      0
+                    ],
+                    "bottom_right": [
+                      2,
+                      0
+                    ]
+                  },
+                  "color": "brown"
+                },
+                {
+                  "name": "Window",
+                  "description": "A large window with a view of the garden and the street.",
+                  "location": {
+                    "top_left": [
+                      2,
+                      0
+                    ],
+                    "bottom_right": [
+                      2,
+                      0
+                    ]
+                  },
+                  "color": "white"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Johnson House",
+          "description": "A charming, two-story house with a wrap-around porch and a spacious backyard.",
+          "location": {
+            "top_left": [
+              3,
+              3
+            ],
+            "bottom_right": [
+              5,
+              5
+            ]
+          },
+          "color": "blue",
+          "children": [
+            {
+              "name": "Living Room",
+              "description": "A spacious living room with a large sofa, armchairs, and a piano.",
+              "location": {
+                "top_left": [
+                  3,
+                  3
+                ],
+                "bottom_right": [
+                  4,
+                  4
+                ]
+              },
+              "color": "beige",
+              "children": [
+                {
+                  "name": "Sofa",
+                  "description": "A comfortable, sectional sofa with plenty of room for lounging.",
+                  "location": {
+                    "top_left": [
+                      3,
+                      3
+                    ],
+                    "bottom_right": [
+                      3,
+                      3
+                    ]
+                  },
+                  "color": "light_brown"
+                },
+                {
+                  "name": "Armchair",
+                  "description": "A stylish, vintage armchair with a matching ottoman.",
+                  "location": {
+                    "top_left": [
+                      4,
+                      3
+                    ],
+                    "bottom_right": [
+                      4,
+                      3
+                    ]
+                  },
+                  "color": "dark_brown"
+                },
+                {
+                  "name": "Piano",
+                  "description": "A beautiful, black grand piano with a polished finish.",
+                  "location": {
+                    "top_left": [
+                      4,
+                      4
+                    ],
+                    "bottom_right": [
+                      4,
+                      4
+                    ]
+                  },
+                  "color": "black"
+                }
+              ]
+            },
+            {
+              "name": "Dining Room",
+              "description": "A formal dining room with a large table, chairs, and a chandelier.",
+              "location": {
+                "top_left": [
+                  3,
+                  5
+                ],
+                "bottom_right": [
+                  5,
+                  5
+                ]
+              },
+              "color": "white",
+              "children": [
+                {
+                  "name": "Table",
+                  "description": "A long, elegant dining table with upholstered chairs and a floral centerpiece.",
+                  "location": {
+                    "top_left": [
+                      4,
+                      5
+                    ],
+                    "bottom_right": [
+                      4,
+                      5
+                    ]
+                  },
+                  "color": "brown"
+                },
+                {
+                  "name": "Chandelier",
+                  "description": "A sparkling, crystal chandelier hanging from the ceiling.",
+                  "location": {
+                    "top_left": [
+                      3,
+                      5
+                    ],
+                    "bottom_right": [
+                      3,
+                      5
+                    ]
+                  },
+                  "color": "crystal"
+                }
+              ]
+            },
+            {
+              "name": "Bedroom",
+              "description": "A cozy bedroom with a queen-size bed and a walk-in closet.",
+              "location": {
+                "top_left": [
+                  5,
+                  3
+                ],
+                "bottom_right": [
+                  5,
+                  4
+                ]
+              },
+              "color": "beige",
+              "children": [
+                {
+                  "name": "Bed",
+                  "description": "A comfortable queen-size bed with fluffy pillows and a warm comforter.",
+                  "location": {
+                    "top_left": [
+                      5,
+                      3
+                    ],
+                    "bottom_right": [
+                      5,
+                      3
+                    ]
+                  },
+                  "color": "white"
+                },
+                {
+                  "name": "Closet",
+                  "description": "A spacious walk-in closet with shelves, racks, and hangers.",
+                  "location": {
+                    "top_left": [
+                      5,
+                      4
+                    ],
+                    "bottom_right": [
+                      5,
+                      4
+                    ]
+                  },
+                  "color": "brown"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Brown House",
+          "description": "A large, stately house with a manicured lawn and a circular driveway.",
+          "location": {
+            "top_left": [
+              6,
+              6
+            ],
+            "bottom_right": [
+              9,
+              9
+            ]
+          },
+          "color": "dark_red",
+          "children": [
+            {
+              "name": "Living Room",
+              "description": "A grand living room with high ceilings, antique furniture, and a fireplace.",
+              "location": {
+                "top_left": [
+                  6,
+                  6
+                ],
+                "bottom_right": [
+                  7,
+                  7
+                ]
+              },
+              "color": "beige",
+              "children": [
+                {
+                  "name": "Sofa",
+                  "description": "A luxurious, tufted sofa with silk pillows and a matching armchair.",
+                  "location": {
+                    "top_left": [
+                      6,
+                      6
+                    ],
+                    "bottom_right": [
+                      6,
+                      6
+                    ]
+                  },
+                  "color": "dark_red"
+                },
+                {
+                  "name": "Armchair",
+                  "description": "A stylish, upholstered armchair with a matching footstool.",
+                  "location": {
+                    "top_left": [
+                      6,
+                      7
+                    ],
+                    "bottom_right": [
+                      6,
+                      7
+                    ]
+                  },
+                  "color": "dark_red"
+                },
+                {
+                  "name": "Fireplace",
+                  "description": "A grand, marble fireplace with a mantel and a roaring fire.",
+                  "location": {
+                    "top_left": [
+                      7,
+                      6
+                    ],
+                    "bottom_right": [
+                      7,
+                      7
+                    ]
+                  },
+                  "color": "gray"
+                }
+              ]
+            },
+            {
+              "name": "Library",
+              "description": "A stately library with floor-to-ceiling bookshelves, leather armchairs, and a desk.",
+              "location": {
+                "top_left": [
+                  8,
+                  6
+                ],
+                "bottom_right": [
+                  9,
+                  7
+                ]
+              },
+              "color": "brown",
+              "children": [
+                {
+                  "name": "Bookshelf",
+                  "description": "A massive bookshelf filled with rare, valuable books and manuscripts.",
+                  "location": {
+                    "top_left": [
+                      8,
+                      6
+                    ],
+                    "bottom_right": [
+                      8,
+                      7
+                    ]
+                  },
+                  "color": "brown"
+                },
+                {
+                  "name": "Armchair",
+                  "description": "A comfortable, leather armchair perfect for reading or relaxing.",
+                  "location": {
+                    "top_left": [
+                      9,
+                      6
+                    ],
+                    "bottom_right": [
+                      9,
+                      6
+                    ]
+                  },
+                  "color": "dark_brown"
+                },
+                {
+                  "name": "Desk",
+                  "description": "A large, ornate wooden desk with a lamp and writing supplies.",
+                  "location": {
+                    "top_left": [
+                      9,
+                      7
+                    ],
+                    "bottom_right": [
+                      9,
+                      7
+                    ]
+                  },
+                  "color": "brown"
+                }
+              ]
+            },
+            {
+              "name": "Bedroom",
+              "description": "A luxurious bedroom with a king-size bed, a balcony, and a marble bathroom.",
+              "location": {
+                "top_left": [
+                  6,
+                  8
+                ],
+                "bottom_right": [
+                  7,
+                  9
+                ]
+              },
+              "color": "beige",
+              "children": [
+                {
+                  "name": "Bed",
+                  "description": "A plush, king-size bed with silk sheets and a down comforter.",
+                  "location": {
+                    "top_left": [
+                      6,
+                      8
+                    ],
+                    "bottom_right": [
+                      6,
+                      8
+                    ]
+                  },
+                  "color": "white"
+                },
+                {
+                  "name": "Balcony",
+                  "description": "A spacious balcony with a view of the garden and the street.",
+                  "location": {
+                    "top_left": [
+                      7,
+                      8
+                    ],
+                    "bottom_right": [
+                      7,
+                      8
+                    ]
+                  },
+                  "color": "gray"
+                },
+                {
+                  "name": "Bathroom",
+                  "description": "A marble bathroom with a large tub, a walk-in shower, and plush towels.",
+                  "location": {
+                    "top_left": [
+                      6,
+                      9
+                    ],
+                    "bottom_right": [
+                      7,
+                      9
+                    ]
+                  },
+                  "color": "white"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
