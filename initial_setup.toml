@@ -66,6 +66,7 @@ initial_memories = """Adam Brown works at the Old Library, primarily with old ma
                       Adam Brown highly values integrity, rigor, and the scientific method; \
                       Adam Brown feels bad about his affair, but thinks that disclosing it would \
                       decrease total utility; \
+                      Adam Brown wants to submit his manuscript project to a history journal by February 16th; \
                       Adam Brown is a utilitarian, and is very interested in moral philosophy;"""
 starting_location = [6, 9]
 yesterday = """On Tuesday, Februrary 12, Adam \

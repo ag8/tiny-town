@@ -66,3 +66,34 @@ def reflect_on_memories(name, memories, t):
         reflected.append([actual_text.split("(")[0], evidence])
 
     return reflected
+
+def summarize_core_memories(name, memories):
+    prompt = "How would one describe " + name + "'s core characteristics given the following statements?\n"
+
+    for memory in memories:
+        prompt += "- " + memory.description + "\n"
+
+    completion = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        max_tokens=1200,
+        temperature=0.7,
+        messages=[
+            {"role": "user", "content": prompt}
+        ]
+    )
+
+    return completion["choices"][0]["message"]["content"]
+
+def get_completion(prompt):
+    completion = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        max_tokens=1200,
+        temperature=0.7,
+        messages=[
+            {"role": "user", "content": prompt}
+        ]
+    )
+
+    # todo add some checks
+
+    return completion["choices"][0]["message"]["content"]
