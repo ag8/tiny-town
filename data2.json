@@ -12,6 +12,7 @@
     ]
   },
   "color": "green",
+  "item": false,
   "children": [
     {
       "name": "Town Square",
@@ -27,6 +28,7 @@
         ]
       },
       "color": "gray",
+      "item": false,
       "children": [
         {
           "name": "Fountain",
@@ -41,7 +43,8 @@
               15
             ]
           },
-          "color": "blue"
+          "color": "blue",
+          "item": false
         },
         {
           "name": "Benches",
@@ -56,7 +59,8 @@
               13
             ]
           },
-          "color": "brown"
+          "color": "brown",
+          "item": false
         }
       ]
     },
@@ -65,60 +69,66 @@
       "description": "A cozy, popular cafe known for its delicious pastries and aromatic coffee.",
       "location": {
         "top_left": [
-          5,
+          15,
           5
         ],
         "bottom_right": [
-          9,
+          19,
           9
         ]
       },
       "color": "pink",
+      "item": false,
       "children": [
         {
           "name": "Counter",
           "description": "A long wooden counter displaying an array of cakes, pastries, and sandwiches.",
           "location": {
             "top_left": [
-              6,
+              16,
               8
             ],
             "bottom_right": [
-              8,
+              18,
               8
             ]
           },
           "color": "brown",
+          "item": false,
           "children": [
             {
               "name": "Cappuccino",
               "description": "A hot, frothy cappuccino with a delicate heart-shaped design.",
               "location": {
                 "top_left": [
-                  7,
+                  17,
                   8
                 ],
                 "bottom_right": [
-                  7,
+                  17,
                   8
                 ]
               },
-              "color": "white"
+              "color": "white",
+              "item": true,
+              "status": "idle"
             },
             {
               "name": "Croissant",
               "description": "A golden, flaky croissant filled with rich almond paste.",
               "location": {
                 "top_left": [
-                  6,
+                  16,
                   8
                 ],
                 "bottom_right": [
-                  6,
+                  16,
                   8
                 ]
               },
-              "color": "yellow"
+              "color": "yellow",
+              "item": true,
+              "status": "idle"
             }
           ]
         },
@@ -127,30 +137,33 @@
           "description": "A set of round tables with comfortable cushioned chairs.",
           "location": {
             "top_left": [
-              6,
+              16,
               6
             ],
             "bottom_right": [
-              8,
+              18,
               7
             ]
           },
           "color": "brown",
+          "item": false,
           "children": [
             {
               "name": "Menu",
               "description": "A printed menu featuring the cafe's selection of food and beverages.",
               "location": {
                 "top_left": [
-                  7,
+                  17,
                   7
                 ],
                 "bottom_right": [
-                  7,
+                  17,
                   7
                 ]
               },
-              "color": "white"
+              "color": "white",
+              "item": true,
+              "status": "idle"
             }
           ]
         }
@@ -170,6 +183,7 @@
         ]
       },
       "color": "light_green",
+      "item": false,
       "children": [
         {
           "name": "Playground",
@@ -185,6 +199,7 @@
             ]
           },
           "color": "red",
+          "item": false,
           "children": [
             {
               "name": "Swings",
@@ -199,7 +214,8 @@
                   23
                 ]
               },
-              "color": "silver"
+              "color": "silver",
+              "item": false
             },
             {
               "name": "Slide",
@@ -214,7 +230,8 @@
                   23
                 ]
               },
-              "color": "blue"
+              "color": "blue",
+              "item": false
             }
           ]
         },
@@ -232,6 +249,7 @@
             ]
           },
           "color": "brown",
+          "item": false,
           "children": [
             {
               "name": "Picnic Table",
@@ -246,7 +264,8 @@
                   27
                 ]
               },
-              "color": "brown"
+              "color": "brown",
+              "item": false
             },
             {
               "name": "Barbecue Grill",
@@ -261,7 +280,9 @@
                   28
                 ]
               },
-              "color": "black"
+              "color": "black",
+              "item": true,
+              "status": "idle"
             }
           ]
         }
@@ -281,6 +302,7 @@
         ]
       },
       "color": "purple",
+      "item": false,
       "children": [
         {
           "name": "Reception",
@@ -296,6 +318,7 @@
             ]
           },
           "color": "white",
+          "item": false,
           "children": [
             {
               "name": "Reservation Book",
@@ -306,11 +329,13 @@
                   12
                 ],
                 "bottom_right": [
-                  23,
+                  22,
                   12
                 ]
               },
-              "color": "black"
+              "color": "black",
+              "item": true,
+              "status": "idle"
             }
           ]
         },
@@ -328,6 +353,7 @@
             ]
           },
           "color": "red",
+          "item": false,
           "children": [
             {
               "name": "Table",
@@ -342,7 +368,9 @@
                   16
                 ]
               },
-              "color": "white"
+              "color": "white",
+              "item": false,
+              "status": "idle"
             },
             {
               "name": "Wine List",
@@ -357,7 +385,9 @@
                   17
                 ]
               },
-              "color": "white"
+              "color": "white",
+              "item": true,
+              "status": "idle"
             }
           ]
         }
@@ -377,6 +407,7 @@
         ]
       },
       "color": "brown",
+      "item": false,
       "children": [
         {
           "name": "Main Hall",
@@ -392,6 +423,7 @@
             ]
           },
           "color": "dark_brown",
+          "item": false,
           "children": [
             {
               "name": "Bookshelf",
@@ -406,7 +438,8 @@
                   17
                 ]
               },
-              "color": "brown"
+              "color": "brown",
+              "item": false
             },
             {
               "name": "Globe",
@@ -421,7 +454,9 @@
                   16
                 ]
               },
-              "color": "dark_brown"
+              "color": "dark_brown",
+              "item": true,
+              "status": "idle"
             }
           ]
         },
@@ -439,6 +474,7 @@
             ]
           },
           "color": "light_brown",
+          "item": false,
           "children": [
             {
               "name": "Ancient Manuscript",
@@ -453,7 +489,9 @@
                   12
                 ]
               },
-              "color": "beige"
+              "color": "beige",
+              "item": true,
+              "status": "idle"
             },
             {
               "name": "First Edition Novel",
@@ -468,7 +506,9 @@
                   17
                 ]
               },
-              "color": "blue"
+              "color": "blue",
+              "item": true,
+              "status": "idle"
             }
           ]
         }
@@ -488,6 +528,7 @@
         ]
       },
       "color": "yellow",
+      "item": false,
       "children": [
         {
           "name": "Smith House",
@@ -503,6 +544,7 @@
             ]
           },
           "color": "white",
+          "item": false,
           "children": [
             {
               "name": "Living Room",
@@ -518,6 +560,7 @@
                 ]
               },
               "color": "beige",
+              "item": false,
               "children": [
                 {
                   "name": "Sofa",
@@ -532,7 +575,9 @@
                       0
                     ]
                   },
-                  "color": "light_brown"
+                  "color": "light_brown",
+                  "item": true,
+                  "status": "idle"
                 },
                 {
                   "name": "Armchair",
@@ -547,7 +592,9 @@
                       1
                     ]
                   },
-                  "color": "dark_brown"
+                  "color": "dark_brown",
+                  "item": true,
+                  "status": "idle"
                 },
                 {
                   "name": "Fireplace",
@@ -559,10 +606,12 @@
                     ],
                     "bottom_right": [
                       0,
-                      1
+                      0
                     ]
                   },
-                  "color": "red"
+                  "color": "red",
+                  "item": true,
+                  "status": "idle"
                 }
               ]
             },
@@ -580,6 +629,7 @@
                 ]
               },
               "color": "white",
+              "item": false,
               "children": [
                 {
                   "name": "Stove",
@@ -594,7 +644,9 @@
                       1
                     ]
                   },
-                  "color": "silver"
+                  "color": "silver",
+                  "item": true,
+                  "status": "idle"
                 },
                 {
                   "name": "Refrigerator",
@@ -609,7 +661,9 @@
                       2
                     ]
                   },
-                  "color": "silver"
+                  "color": "silver",
+                  "item": true,
+                  "status": "idle"
                 },
                 {
                   "name": "Dining Table",
@@ -624,7 +678,8 @@
                       2
                     ]
                   },
-                  "color": "brown"
+                  "color": "brown",
+                  "item": false
                 }
               ]
             },
@@ -642,6 +697,7 @@
                 ]
               },
               "color": "beige",
+              "item": false,
               "children": [
                 {
                   "name": "Bed",
@@ -656,7 +712,9 @@
                       0
                     ]
                   },
-                  "color": "white"
+                  "color": "white",
+                  "item": true,
+                  "status": "idle"
                 },
                 {
                   "name": "Dresser",
@@ -671,7 +729,9 @@
                       0
                     ]
                   },
-                  "color": "brown"
+                  "color": "brown",
+                  "item": true,
+                  "status": "idle"
                 },
                 {
                   "name": "Window",
@@ -686,7 +746,9 @@
                       0
                     ]
                   },
-                  "color": "white"
+                  "color": "white",
+                  "item": true,
+                  "status": "idle"
                 }
               ]
             }
@@ -706,6 +768,7 @@
             ]
           },
           "color": "blue",
+          "item": false,
           "children": [
             {
               "name": "Living Room",
@@ -721,6 +784,7 @@
                 ]
               },
               "color": "beige",
+              "item": false,
               "children": [
                 {
                   "name": "Sofa",
@@ -735,7 +799,9 @@
                       3
                     ]
                   },
-                  "color": "light_brown"
+                  "color": "light_brown",
+                  "item": true,
+                  "status": "idle"
                 },
                 {
                   "name": "Armchair",
@@ -750,7 +816,9 @@
                       3
                     ]
                   },
-                  "color": "dark_brown"
+                  "color": "dark_brown",
+                  "item": true,
+                  "status": "idle"
                 },
                 {
                   "name": "Piano",
@@ -765,7 +833,9 @@
                       4
                     ]
                   },
-                  "color": "black"
+                  "color": "black",
+                  "item": true,
+                  "status": "idle"
                 }
               ]
             },
@@ -783,6 +853,7 @@
                 ]
               },
               "color": "white",
+              "item": false,
               "children": [
                 {
                   "name": "Table",
@@ -797,7 +868,9 @@
                       5
                     ]
                   },
-                  "color": "brown"
+                  "color": "brown",
+                  "item": true,
+                  "status": "idle"
                 },
                 {
                   "name": "Chandelier",
@@ -812,7 +885,9 @@
                       5
                     ]
                   },
-                  "color": "crystal"
+                  "color": "crystal",
+                  "item": true,
+                  "status": "idle"
                 }
               ]
             },
@@ -830,6 +905,7 @@
                 ]
               },
               "color": "beige",
+              "item": false,
               "children": [
                 {
                   "name": "Bed",
@@ -844,7 +920,9 @@
                       3
                     ]
                   },
-                  "color": "white"
+                  "color": "white",
+                  "item": true,
+                  "status": "idle"
                 },
                 {
                   "name": "Closet",
@@ -859,7 +937,9 @@
                       4
                     ]
                   },
-                  "color": "brown"
+                  "color": "brown",
+                  "item": true,
+                  "status": "idle"
                 }
               ]
             }
@@ -879,6 +959,7 @@
             ]
           },
           "color": "dark_red",
+          "item": false,
           "children": [
             {
               "name": "Living Room",
@@ -894,6 +975,7 @@
                 ]
               },
               "color": "beige",
+              "item": false,
               "children": [
                 {
                   "name": "Sofa",
@@ -908,7 +990,9 @@
                       6
                     ]
                   },
-                  "color": "dark_red"
+                  "color": "dark_red",
+                  "item": true,
+                  "status": "idle"
                 },
                 {
                   "name": "Armchair",
@@ -923,7 +1007,9 @@
                       7
                     ]
                   },
-                  "color": "dark_red"
+                  "color": "dark_red",
+                  "item": true,
+                  "status": "idle"
                 },
                 {
                   "name": "Fireplace",
@@ -938,7 +1024,8 @@
                       7
                     ]
                   },
-                  "color": "gray"
+                  "color": "gray",
+                  "item": false
                 }
               ]
             },
@@ -956,6 +1043,7 @@
                 ]
               },
               "color": "brown",
+              "item": false,
               "children": [
                 {
                   "name": "Bookshelf",
@@ -970,7 +1058,8 @@
                       7
                     ]
                   },
-                  "color": "brown"
+                  "color": "brown",
+                  "item": false
                 },
                 {
                   "name": "Armchair",
@@ -985,7 +1074,9 @@
                       6
                     ]
                   },
-                  "color": "dark_brown"
+                  "color": "dark_brown",
+                  "item": true,
+                  "status": "idle"
                 },
                 {
                   "name": "Desk",
@@ -1000,7 +1091,9 @@
                       7
                     ]
                   },
-                  "color": "brown"
+                  "color": "brown",
+                  "item": true,
+                  "status": "idle"
                 }
               ]
             },
@@ -1018,6 +1111,7 @@
                 ]
               },
               "color": "beige",
+              "item": false,
               "children": [
                 {
                   "name": "Bed",
@@ -1032,7 +1126,9 @@
                       8
                     ]
                   },
-                  "color": "white"
+                  "color": "white",
+                  "item": true,
+                  "status": "idle"
                 },
                 {
                   "name": "Balcony",
@@ -1047,7 +1143,8 @@
                       8
                     ]
                   },
-                  "color": "gray"
+                  "color": "gray",
+                  "item": false
                 },
                 {
                   "name": "Bathroom",
@@ -1062,7 +1159,8 @@
                       9
                     ]
                   },
-                  "color": "white"
+                  "color": "white",
+                  "item": false
                 }
               ]
             }

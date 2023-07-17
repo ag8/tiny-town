@@ -1,6 +1,7 @@
 import re
 
 import numpy as np
+from functools import singledispatch
 
 from http_utils import get_embedding, get_importance, reflect_on_memories, summarize_core_memories, get_completion
 from params import ALPHA_RECENCY, ALPHA_IMPORTANCE, ALPHA_RELEVANCE
@@ -43,6 +44,7 @@ class Agent:
         self.age = age
         self.current_location = starting_location
         self.yesterday = yesterday
+        self.current_activity = "sleeping"
 
     def retrieve_memories(self, query_memory, t, top_k=10):
         if top_k >= len(self.memories):
@@ -84,6 +86,9 @@ class Agent:
 
         return memories_to_return
 
+    def add_memory_desc(self, description, t):
+        self.memories.append(Memory(description, t))
+
     def add_memory(self, memory):
         self.memories.append(memory)
 
@@ -120,28 +125,43 @@ Today is Wednesday February 13. Here is {self.name}'s plan today in broad stroke
         print("===BROAD PLAN===")
         print(broad_plan)
 
-        prompt2 = "Decompose the following plan into one-hour long chunks: ```1) " + broad_plan + "```. Ok, here it is decomposed: 12:00 am: Sleep. 1:00 am:"
+        prompt2 = "Decompose the following plan into one-hour long chunks: ```1) " + broad_plan + "```. Ok, here it is decomposed: 12:00 am - 1:00 am: Sleep. 1:00 am - 2:00 am:"
         hourly_plan = get_completion(prompt2)
 
         print("===HOURLY PLAN===")
         print(hourly_plan)
 
-        times = re.findall("\d+:\d+ [ap]m", hourly_plan)
-        times = ["1:00 am"] + times
-        contents = re.split("\d+:\d+ [ap]m", hourly_plan)
+        times = re.findall(r'\d+:\d+ [ap]m[ ]*-[ ]*\d+:\d+ [ap]m', hourly_plan)
+        times = ["1:00 am - 2:00 am"] + times
+        contents = re.split(r'\d+:\d+ [ap]m[ ]*-[ ]*\d+:\d+ [ap]m', hourly_plan)
 
         detailed_plan = ""
 
         # not pythonic, but whatever
-        for i in range(0, len(times) - 3, 3):
+        for i in range(0, len(times), 5):
             if contents[i].lower().__contains__('sleep'):
                 detailed_plan += times[i] + " " + contents[i] + "\n"
                 continue
 
-            prompt3 = "Decompose the following plan into 5-15 minute chunks: ```" + times[i] + " " + contents[i] + "" + times[i + 1] + " " + contents[i + 1] + "" + times[i + 2] + " " + contents[i + 2] + "```. Ok, here it is decomposed: "
+            chunkinfo = ""
+
+            for j in range(5):
+                if i + j < len(times):
+                    chunkinfo += times[i + j] + " " + contents[i + j] + ""
+
+            prompt3 = f"{self.core_summary(t)} \n\n Here is {self.name}'s plan for the day so far: {detailed_plan}. \n\n Decompose the following continuation into 5-15 minute chunks: ```" + chunkinfo + "```. Ok, here it is decomposed: "
+            print(prompt3)
             compl = get_completion(prompt3)
             print(compl)
             detailed_plan += compl + "\n"
 
         print("===DETAILED PLAN===")
         print(detailed_plan)
+
+        dp_times = re.findall(r'\d+:\d+ [ap]m[ ]*-[ ]*\d+:\d+ [ap]m', detailed_plan)
+        dp_things = re.split(r'\d+:\d+ [ap]m[ ]*-[ ]*\d+:\d+ [ap]m', detailed_plan)
+
+        for i in range(len(dp_times) - 1):
+            planmem = Memory("Current planned schedule: " + str(dp_times[i]) + ": " + str(dp_things[i + 1]), t,
+                             override_importance=2)
+            self.add_memory(planmem)

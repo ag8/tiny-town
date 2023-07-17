@@ -68,7 +68,7 @@ initial_memories = """Adam Brown works at the Old Library, primarily with old ma
                       decrease total utility; \
                       Adam Brown wants to submit his manuscript project to a history journal by February 16th; \
                       Adam Brown is a utilitarian, and is very interested in moral philosophy;"""
-starting_location = [6, 9]
+starting_location = [6, 8]
 yesterday = """On Tuesday, Februrary 12, Adam \
 1) woke up and completed his morning routine at 6:00 am \
 2) went to the library to study manuscripts at 8:00 am \
@@ -95,8 +95,8 @@ initial_memories = """Sheila Brown owns the Grand Restaurant in town, and makes 
                       money from it; \
                       Sheila Brown is very power-seeking, and will stop at nothing to gain it; \
                       Sheila Brown is interested in becoming mayor at any cost; \
-                      Sheila Brown is unaware of her husband's affair;"""
-starting_location = [6, 9]
+                      Sheila Brown believes her husband is faithful, if a bit distant sometimes;"""
+starting_location = [6, 8]
 yesterday = """On Tuesday, Februrary 12, Sheila \
 1) woke up and completed her morning routine at 7:00 am
 2) worked on her hobbies at 8:00 am \

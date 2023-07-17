@@ -2,11 +2,13 @@ import json
 
 
 class Thing:
-    def __init__(self, name, description, location, color):
+    def __init__(self, name, description, location, color, item, status):
         self.name = name
         self.description = description
         self.location = location
         self.color = color
+        self.item = item
+        self.status = status
         self.children = []
 
     def __str__(self):
@@ -26,7 +28,7 @@ class Town:
 
         with open(data_source) as f:
             town = json.load(f)
-        main_town = Thing(town['name'], town['description'], ((town['location']['top_left']), (town['location']['bottom_right'])), town['color'])
+        main_town = Thing(town['name'], town['description'], ((town['location']['top_left']), (town['location']['bottom_right'])), town['color'], town['item'], None)
 
         stack = [(town, main_town)]
 
@@ -40,7 +42,9 @@ class Town:
                     for child in raw["children"]:
                         location = ((child['location']['top_left']), (child['location']['bottom_right']))
                         color = child['color']
-                        thingified_child = Thing(child['name'], child['description'], location, color)
+                        item = child['item']
+                        status = child['status'] if item else None
+                        thingified_child = Thing(child['name'], child['description'], location, color, item, status)
                         stack.append((child, thingified_child))
                         processed.children.append(thingified_child)
 

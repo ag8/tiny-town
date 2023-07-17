@@ -6,6 +6,11 @@ import secret_stuff
 
 openai.api_key = secret_stuff.API_KEY
 
+def save(text):
+    with open("requests.log", "a") as f:
+        f.write(text + "\n")
+        f.write("-----------------------------\n")
+
 def get_embedding(text):
     response = openai.Embedding.create(
         input="Your text string goes here",
@@ -15,12 +20,15 @@ def get_embedding(text):
     return embeddings
 
 def get_importance(memory):
+    prompt = "On the scale of 1 to 10, where 1 is purely mundane (e.g., brushing teeth, making bed) and 10 is extremely poignant (e.g., a break up, college acceptance), rate the likely poignancy of the following piece of memory.\nMemory: " + memory + "\nRating:"
+    save(prompt)
+
     completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         max_tokens=2,
         temperature=0.7,
         messages=[
-            {"role": "user", "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., brushing teeth, making bed) and 10 is extremely poignant (e.g., a break up, college acceptance), rate the likely poignancy of the following piece of memory.\nMemory: " + memory + "\nRating:"}
+            {"role": "user", "content": prompt}
         ]
     )
     try:
@@ -40,6 +48,7 @@ def reflect_on_memories(name, memories, t):
         prompt += str(idx) + ". " + memory.description + "\n"
 
     prompt += "What 5 high-level insights can you infer from the above statements? (example format: insight (because of {1, 6, 2, 3}))\n\n1."
+    save(prompt)
 
     completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
@@ -73,6 +82,8 @@ def summarize_core_memories(name, memories):
     for memory in memories:
         prompt += "- " + memory.description + "\n"
 
+    save(prompt)
+
     completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         max_tokens=1200,
@@ -85,6 +96,8 @@ def summarize_core_memories(name, memories):
     return completion["choices"][0]["message"]["content"]
 
 def get_completion(prompt):
+    save(prompt)
+
     completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         max_tokens=1200,
